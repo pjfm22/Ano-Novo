@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Ano Novo 2024!</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #FFA07A, #FFD700, #00CED1, #BA55D3);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #animation-container {
+            text-align: center;
+            animation: rotate 5s linear infinite;
+        }
+
+        #firework {
+            font-size: 60px;
+            animation: fireworks 3s ease-out infinite;
+        }
+
+        #text {
+            font-size: 24px;
+            margin-top: 20px;
+            font-family: 'Arial', sans-serif;
+            animation: textScale 2s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fireworks {
+            0% {
+                transform: scale(1);
+                color: #FFD700;
+            }
+            50% {
+                transform: scale(1.5);
+                color: #FF4500;
+            }
+            100% {
+                transform: scale(1);
+                color: #FFD700;
+            }
+        }
+
+        @keyframes textScale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="animation-container">
+        <div id="firework">🎆</div>
+        <p id="text">Feliz Ano Novo <br>a todos do Posto Murungava 2!</p>
+    </div>
+</body>
+</html>
